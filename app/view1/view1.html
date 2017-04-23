@@ -1,1 +1,6 @@
 <p>This is the partial for view 1.</p>
+<input type="text" name="empName" ng-model="emp_Name">
+<p ng-if="emp_Name">Hey I am {{emp_Name}}</p>
+
+<span ng-class="{'redBg':isActive,'blueBg':!isActive}">{{name}}</span>
+<button ng-disabled={{isActive}}> Click Me Is you can !!!</button>
